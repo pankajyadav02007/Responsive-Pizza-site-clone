@@ -1,0 +1,1221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: sans-serif;
+}
+
+body{
+    background-image: url('https://themewagon.github.io/pizza/images/bg_4.jpg');
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* main-header */
+#main-header{
+background-color: rgb(18,22,24);
+color: white;
+height: 80px;
+padding: 24px;
+border-bottom: 1px solid rgb(252,219,198);
+display: flex;
+align-items: center;
+justify-content: space-around;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 30;
+}
+
+#logo {
+    width: 100px;
+}
+
+#logo p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#logo span{
+    font-size: 10px;
+    letter-spacing: 4px;
+color: orange;
+}
+
+#main-header nav{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    transition: 2s;
+}
+
+#home{
+    color: rgb(250,197,100);
+
+}
+
+#main-header a{
+    font-size: 15px;
+}
+
+#main-header a:hover{
+    color: rgb(250,197,100);
+    border-bottom: 1px solid rgb(250,197,100);
+}
+
+#header-menu-icon{
+    display: none;
+}
+
+#header-close-icon{
+    display: none;
+}
+
+/* main-header Responsive Pages */
+@media screen and (max-width:600px) {
+    #main-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #header-menu-icon{
+    display: block;
+}
+
+#main-header nav{
+    display: none;
+    position: absolute;
+    top: 72px;
+    background-color: rgba(0, 0, 0, 0.74);
+    left: 0;
+    right: 0;
+    padding: 20px;
+}
+
+#header-nav a{
+    width: 60px;
+display: block;
+}
+}
+
+/* first page */
+.first-page{
+    background-color: rgba(0, 0, 0, 0.616);
+    height:120vh;
+}
+
+.bg-black{
+    background-size: cover;
+    background-image: url('https://themewagon.github.io/pizza/images/bg_3.jpg');
+}
+
+#content {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 280px;
+    color: white;
+height: auto;
+}
+
+#content h1{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+#content p{
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 50px;
+
+}
+
+#content button{
+    height: 50px;
+    width: 120px;
+font-size: 14px;
+background-color: rgb(250,197,100);
+border: none;
+text-transform: capitalize;
+outline: none;
+}
+
+#content button:hover{
+    background: transparent;
+    color:rgb(250,197,100) ;
+    border: 1px solid rgb(250,197,100);
+}
+
+#content #transparent{
+background: transparent;
+color: white;
+border: 1px solid white;
+}
+
+#content #transparent:hover{
+    background-color:rgb(250,197,100);
+    color: black;
+    border: none;
+}
+
+#content #p{
+    color: orange;
+    font-size: 24px;
+    font-family:arial;
+}
+
+#content span{
+    font-size: 20px;
+}
+
+
+
+/* first page Responsive desigen */
+@media screen and (max-width : 768px) {
+    #content h1{
+        font-size: 26px;
+        font-weight: 500;
+    }
+    
+    #content p{
+        font-size: 16px;
+    }
+
+
+    .bg-black{
+background-size: cover;
+object-fit: cover;
+background-repeat: no-repeat;
+    }
+
+}
+
+
+/* black-sec */
+.black-sec{
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.black-sec .content{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    width: 70%;
+padding-left: 100px;
+padding-top: 24px;
+}
+
+.black-sec .content svg{
+    color: rgb(250,197,100) ;
+}
+
+.black-sec .content p{
+    line-height: 28px;
+    padding-top: 16px;
+    color: rgb(106,106,106);
+    padding-left: 32px;
+}
+
+.black-sec .content span{
+    padding-left: 20px;
+}
+
+.black-sec .content > div{
+    height: 100%;
+}
+
+.black-sec #icon-sec{
+    background-color: rgb(250,197,100);
+    display: flex;
+    align-items: center;
+gap: 20px;
+width: 40%;
+padding-left: 60px;
+}
+
+
+/* black-sec Responsive desigen */
+@media screen and (max-width : 768px) {
+    .black-sec{
+        background-color: black;
+        color: white;
+        display: block;
+        height: auto;
+    }
+
+    .black-sec .content{
+        display: block;
+        color: white;
+        padding-left: 0px;
+        height: 250px;
+    }
+
+    .black-sec #icon-sec{
+        background-color: rgb(250,197,100);
+        display: block;
+       width: 100%;
+       height: 80px;
+       display: flex;
+       text-align: center;
+    }
+    
+    .black-sec .content p{
+        padding-top: 8px;
+        color: rgb(106,106,106);
+        display: inline-block;
+        font-size: 16px;
+        padding-left: 32px;
+       
+    }   
+   
+    .black-sec .content > div{
+        height: 50px;
+        width: 320px;
+        margin-top: 16px;
+        padding-left: 15px;
+    }
+}
+
+
+/*  Welcome to pizza-sec */
+.welcome{
+    height: auto;
+    display: flex;
+    color: white;
+}
+
+.welcome img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.welcome-content{
+    padding: 50px;
+}
+
+.welcome-content span{
+    color:rgb(250,197,100) ;
+}
+
+.welcome-content h1{
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.welcome-content p{
+    font-size: 14px;
+    color: gray;
+    padding-top: 24px;
+    line-height: 26px;
+}
+
+
+/*  Welcome to pizza-sec Responsive desigen*/
+@media screen and (max-width : 768px) {
+    .welcome{
+        height: auto;
+        display: block;
+        color: white;
+    }
+
+
+    .welcome-content{
+        padding: 10px;
+    }
+
+    .welcome-content h1{
+        font-size: 30px;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+
+    
+}
+
+
+/* our Services */
+.services{
+    height: 100vh;
+    background-image: url('https://themewagon.github.io/pizza/images/food.png');
+}
+
+.title{
+text-align: center;
+padding: 100px;
+/* border: 1px solid red; */
+}
+
+.title p{
+    font-size: 15px;
+    color:rgb(145, 102, 23);
+    line-height: 24px;
+    padding-top: 24px;
+}
+
+.services h1{
+font-weight: 200;
+text-transform: uppercase;
+}
+
+.card-sec{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    text-align: center;
+  
+}
+
+.card > div{
+    position: relative;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.card .rotate{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(191,126,6);
+    transition: 0.2s ease-in-out;
+}
+
+.card > div img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 80px;
+}
+
+.card:hover .rotate{
+    background-color: rgb(255,193,7);
+    transform: rotate(135deg);
+    border: none;
+}
+
+.card:hover > div img{
+    filter: invert(1);
+}
+
+.card-sec h2{
+    font-weight: 100;
+    font-size: 18px;
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+.card-sec p{
+    font-size: 15px;
+    color:rgb(145, 102, 23);
+    line-height: 24px;
+}
+
+
+/* our Services Responsive desigen */
+@media screen and (max-width : 768px) {
+    .services{
+        height: 1200px;
+    }
+
+    .title{
+        padding: 100px 0px;
+       margin-bottom: -60px;
+        }
+        
+        .title h1{
+            font-weight: 600;
+        }
+
+    .card-sec{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .card-sec > div img{
+        border: 1px solid rgb(191,126,6);
+        border: none;
+        }
+        
+    .card-sec h2{
+        font-weight: 600;
+    }
+
+    .card-sec p{
+        margin-bottom: 32px;
+    }
+}
+
+/* Hot Pizza Meals-sec */
+.hot-pizza{
+height: 350px;
+color: white;
+text-align: center;
+padding-top: 100px;
+}
+
+.hot-pizza h2{
+    font-weight: 100;
+    font: 28px "josfin sans",arial,sans-serif;
+    text-transform: uppercase;
+}
+
+.hot-pizza p{
+font-size: 15px;
+line-height: 26px;
+margin-top: 28px;
+color: rgb(110,110,110);
+}
+
+
+.hot-pizza-cards{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    /* gap: 15px; */
+    color: white;
+}
+
+.hot-pizza-cards > div img{
+object-fit: cover;
+}
+
+.hot-pizza-content{
+    width: 200px;
+    padding-left: 12px;
+    background-color: rgba(26, 25, 27, 0.589);
+}
+
+.hot-pizza-cards > div h3{
+    font-weight: 200;
+    padding-top: 24px;
+    padding-bottom: 14px;
+}
+
+.hot-pizza-cards > div p{
+    color: rgb(110,110,110);
+    font-size: 15px;
+    line-height: 32px;
+}
+
+.hot-pizza-cards > div span{
+    color:rgb(229,181,93);
+    
+}
+
+.hot-pizza-cards > div button{
+    height: 30px;
+    width: 60px;
+    margin-left: 12px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.hot-pizza-cards > div button:hover{
+    background-color: rgb(229,181,93);
+    color: black;
+    border:none;
+
+}
+
+
+/* Hot Pizza Meals-sec Responsive desigen*/
+@media screen and (max-width : 768px) {
+    .hot-pizza-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 24px;
+        color: white;
+    }
+
+    .hot-pizza-cards > div img{
+        object-fit: cover;
+        width: 150px;
+        }
+
+        .hot-pizza-cards > div h3{
+            font-weight: 500;
+            padding-bottom: 14px;
+        }
+        
+        .hot-pizza-cards > div p{
+            color: rgb(110,110,110);
+            font-size: 15px;
+            line-height: 32px;
+        }
+
+        .hot-pizza-content{
+            width: auto;
+        }      
+
+}
+
+
+ /* Our Menu Pricing-sec */
+ .menu-pricing{
+    height: 300px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    }
+    
+    .menu-pricing h2{
+        font-weight: 100;
+        font: 28px "josfin sans",arial,sans-serif;
+        text-transform: uppercase;
+    }
+    
+    .menu-pricing p{
+    font-size: 15px;
+    line-height: 26px;
+    color: rgb(110,110,110);
+    }
+
+    .menu-pricing-card{
+        display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 24px;
+    }
+    
+.menu-card{
+display: flex;
+gap: 24px;
+color: white;
+padding-bottom: 26px;
+height: 100px;
+align-items: center;
+}
+
+.menu-card > div{
+    /* border: 1px solid red; */
+    width: 80%;
+}
+
+.menu-card img{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.menu-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.menu-content h2{
+    font-size: 16px;
+    font-weight: 100;
+    width: auto;
+    background-color: rgba(14, 13, 13, 0.815);
+}
+
+.menu-content p{
+background-color: rgba(14, 13, 13, 0.815);
+width: 60px;
+text-align: right;
+color:rgb(208,164,85);
+}
+
+.menu-card span{
+    font-size: 15px;
+    font-weight: 100;
+line-height: 40px;
+color: #727272;
+}
+
+.menu-content #dotted{
+    width: 250px;
+    height: 12px;
+    border-bottom: 1px dotted orange;
+}
+
+
+ /* Our Menu Pricing-sec Responsive desigen*/
+@media screen and (max-width : 768px) {
+        .menu-pricing-card{
+            display: grid;
+            /* border: 1px solid red; */
+        }
+
+        .menu-content h2{
+            font-size: 15px;
+            width: auto;
+        }
+    
+        .menu-card span{
+            font-size: 15px;
+        line-height: 24px;
+        color: #727272;
+        }
+
+        .menu-content #dotted{
+            width: 50px;
+            height: 12px;
+            border-bottom: 1px dotted orange;
+        }
+}
+
+/*only images section */
+.only-img-sec{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 150px;
+}
+
+.only-img-sec div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.only-img-sec img{
+    width: 100%;
+    height: 100%;
+}
+
+#svg-icon{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+#svg{
+    position: absolute;
+    z-index: 999;
+    color: white;
+    opacity: 0;
+}
+
+.only-img-sec div:hover #svg-icon{
+    opacity: 1;
+transform: rotate(135deg);
+}
+
+.only-img-sec div:hover #svg{
+    opacity: 1;
+
+}
+
+#svg-icon svg{
+    text-align: center;
+    color: white;
+}
+
+/*only images section Responsive desigen*/
+@media screen and (max-width : 768px) {
+    .only-img-sec{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 150px;
+    }
+}
+
+
+/* bg image */
+#black-sec{
+height: 100%;
+background-color: rgba(0, 0, 0, 0.705);
+color: white;
+}
+
+.grid-sec{
+    height: 250px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 120px;
+}
+
+.bg-img{
+    background-image: url('https://themewagon.github.io/pizza/images/bg_2.jpg');
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.grid-sec{
+    text-align: center;
+    padding-top: 250px;
+}
+
+
+.grid-sec .second-card > div{
+    border: 1px solid #F3C061;
+    display: inline-block;
+}
+
+.second-card > div:hover{
+    transform: rotate(135deg);
+    transition: all 0.5s ease-in-out;
+    border: none;
+    background-color: #F3C061;
+}
+
+.second-card img{
+    height: 60px;
+}
+
+.second-card img:hover{
+    transform: rotate(-135deg);
+    transition: all 0.5s ease-in-out;
+    color: black;
+filter: invert(0.9);
+padding: 12px;
+}
+
+.grid-sec p{
+    color: #F3C061;
+    font-size: 24px;
+    padding-top: 24px;
+} 
+
+.grid-sec span{
+font-size: 12.5px;
+font-weight: 550;
+line-height: 32px;
+color: rgb(168,167,167);
+}
+
+/* bg image Responsive desigen */
+@media screen and (max-width : 768px) {
+    #black-sec{
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.705);
+        color: white;
+        }
+        
+        .bg-img{
+            background-size: cover;
+            background-attachment: scroll;
+         height: 200%;
+        }
+
+        .second-card img{
+            height: 80px;
+        }
+        
+        .grid-sec{
+             display: grid;
+             padding-top: 100px;
+        }
+
+        .grid-sec span{
+            font-size: 18px;
+            font-weight: 100;
+        }
+        
+}
+
+/*pizza,drink,burger,pasta */
+.pizza-sec{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 40px;
+}
+
+.pizza-sec > div{
+    padding-top: 40px;
+}
+
+.pizza-sec #img{
+    /* border: 1px solid red; */
+    height: 650px;
+    width: 40%;
+}
+
+.button-sec button{
+height: 40px;
+width: 100px;
+background-color: transparent;
+border: 1px solid #F3C061;
+color: #F3C061;
+font-weight: 550;
+font-size: 15px;
+}
+
+.button-sec button:hover{
+    background-color: #F3C061;
+    color: black;
+}
+
+#pizza-color{
+    background-color: #F3C061;
+    color: black;
+}
+
+.img-card{
+    height: auto;
+    color: white;
+    text-align: center;
+    display: flex;
+    padding-top: 36px;
+    gap: 32px;
+    /* border: 1px solid red; */
+}
+
+
+.img-card img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.img-card h3{
+    font-weight: 100;
+    padding-top: 16px;
+}
+
+.img-card p{
+    font-weight: 100;
+    padding-top: 12px;
+    font-size: 15px;
+    line-height: 26px;
+    color: rgb(106,106,107);
+    margin-bottom: 24px;
+}
+
+.img-card span{
+    color: #F3C061;
+}
+
+.img-card button{
+    height: 32px;
+    width: 100px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+margin-top: 24px;
+}
+
+
+/*pizza,drink,burger,pasta Responsive desigen */
+@media screen and (max-width : 768px) {
+    .pizza-sec{
+        /* border: 1px solid red; */
+        display: grid;
+        padding-top: 80px;
+        gap: 32px;
+        width: auto;
+    }
+    
+    .button-sec {
+        /* border: 1px solid red; */
+        display: grid;
+        gap: 4px;
+        justify-content: center;
+        }
+
+        .button-sec button{
+            width: 250px;
+            height: 50px;
+        }
+
+        .img-card{
+        display: grid;
+            padding-top: 36px;
+            gap: 32px;
+        }
+        
+        .pizza-sec #img{
+            /* border: 1px solid red; */
+            height: 450px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+}
+
+/* Recent from blog-card-sec */
+.blog-card{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.blog-card img{
+width: 300px;
+object-fit: cover;
+border-radius: 6px;
+}
+
+.blog-card span{
+    font-size: 14px;
+    color: #727272;
+    line-height: 4;
+}
+
+.blog-card h3{
+    font-size: 16px;
+    font-weight: 100;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.blog-card p{
+    font-size: 15px;
+    line-height: 24px;
+    color: #727272;
+}
+
+/* Recent from blog-card-sec Responsive desigen */
+@media screen and (max-width : 768px) {    
+    .blog-card{
+        display: grid;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .blog-card span{
+        font-size: 15px;
+    }
+
+}
+
+/* contact-sec */
+.contact-sec{
+    display: flex;
+    height: 450px;
+    margin-top: 150px;
+}
+
+#white-sec{
+    background-image: url('pizza2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact-sec #white-sec{
+    width: 50%;
+background-color: white;
+}
+
+#contact{
+    width: 50%;
+color: white;
+background-color: black;
+padding: 50px;
+padding-top: 100px;
+}
+
+#contact h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#contact label{
+    font-size: 12px;
+    font-weight:600;
+    margin-top: 24px;
+display: block;
+}
+
+#contact input{
+    width: 400px;
+    height: 24px;
+    display: block;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 14px;
+    outline: none;
+    color: white;
+}
+
+#contact textarea{
+    width: 400px;
+    border-bottom: 1px solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    margin-top: 14px;
+    outline: none;
+color: white;
+}
+
+#contact button{
+    height: 50px;
+    width: 80px;
+    background-color: #F3C061;
+    color: black;
+    border: none;
+    display: block;
+    margin-top: 14px;
+
+}
+
+/* contact-sec Responsive desigen*/
+@media screen and (max-width : 768px) {
+    .contact-sec{
+        display: grid;
+        height: 450px;
+        margin-top: 150px; 
+
+    }
+    
+    .contact-sec #white-sec{
+        height: 450px;
+        width: 100%;
+    background-color: white;
+    }
+
+    #contact{
+        width: 100%;
+    color: white;
+    background-color: black;
+    padding: 24px;
+    padding-top: 50px;
+    }
+
+    #contact input{
+        width: 280px;
+    }
+
+    #contact textarea{
+        width: 280px;
+    }
+}
+
+/* footer-sec */
+.footer-sec{
+    height: auto;
+    background-color: rgb(16,19,21);
+    display: flex;
+    gap: 32px;
+    color: white;
+    justify-content: center;
+    padding: 100px;
+    }
+
+.footer-sec p{
+    line-height: 32px;
+    color: #727272;
+
+}
+
+
+#about p{
+    line-height:32px ;
+    padding-bottom: 60px;
+    color: #727272;
+}
+
+#services p{
+    line-height: 50px;
+
+}
+
+#have-sec p{
+    margin-top: -10px;
+    margin-bottom: 24px;
+    line-height: 24px;
+}
+
+
+.icons{
+    display: flex;
+    gap: 24px;
+}
+
+.icons svg{
+    border-radius: 999px;
+    height: 36px;
+    width: 36px;
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.24);    
+}
+
+.imgs{
+    display: flex;
+    gap: 24px;
+    padding-top: 20px;
+}
+
+.imgs img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    padding-top: -40px;
+}
+
+.footer-sec h2{
+    font-weight: 100;
+    font-size: 18px;
+    padding-bottom: 32px;
+}
+
+.footer-sec p{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+/* footer-sec Responsive desigen*/
+@media screen and (max-width : 768px) {
+    .footer-sec{
+        height: auto;
+        background-color: rgb(16,19,21);
+        display: grid;
+        gap: 32px;
+        color: white;
+        justify-content: center;
+        margin-top: 400px;
+    }
+
+    .footer-sec >div{
+    width: 300px;
+    text-align: center;
+    }
+
+    .footer-sec h2{
+        font-weight: 100;
+        font-size: 20px;
+    }
+    
+    .footer-sec p{
+        font-size: 15px;
+        font-weight: 100;
+    }
+
+    .icons{
+        justify-content: center;
+        
+    }
+    .icons svg{
+       border-radius: 999px;
+       height: 40px;
+       width: 40px;
+       padding: 6px;
+       background-color: rgba(255, 255, 255, 0.158);    
+}
+}
